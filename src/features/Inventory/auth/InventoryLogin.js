@@ -60,7 +60,7 @@ const InventoryLogin = () => {
                     localStorage.setItem("token", JSON.stringify(res.data?.jwt))
                     showSuccess('Login successfully!');
                     setIsAuthenticated(true)
-                    navigate('/create-invoice')
+                    navigate('/inventory/create-invoice')
                 })
                 .catch((error) => {
                     // console.log("errror ====>>", error)

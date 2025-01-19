@@ -15,12 +15,12 @@ const RoleProtectedRoute = ({ children, allowedRoles }) => {
     }
 
     if (!isAuthenticated) {
-        return <Navigate to='/inventory/login' />;
+        return <Navigate to='/login' />;
     }
 
-    // if (!allowedRoles.some(role => roles.includes(role))) {
-    //     return <Navigate to="/inventory/login" />;
-    // }
+    if (!allowedRoles.some(role => roles.includes(role))) {
+        return <Navigate to="/login" />;
+    }
 
     return (
         <div className="bg-[#F8F7FA] max-h-screen flex ">

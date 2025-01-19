@@ -11,7 +11,7 @@ import { FaFileInvoice } from "react-icons/fa";
 import logo from "../../../assets/logo.jpeg";
 
 const SideDrawer = () => {
-    const location = useLocation(); // Get the current route
+    const location = useLocation(); 
     const navigate = useNavigate();
 
     const sideBarData = [
@@ -19,25 +19,25 @@ const SideDrawer = () => {
             id: "manageUsers",
             icon: <CreditCardIcon />,
             label: "Invoice",
-            url: "/create-invoice",
+            url: "/inventory/create-invoice",
         },
         {
             id: "allApplicants",
             icon: <PeopleAltIcon />,
             label: "User Management",
-            url: "/users",
+            url: "/inventory/users",
         },
         {
             id: "manageInvoice",
             icon: <FaFileInvoice />,
             label: "Manage Invoice",
-            url: "/manage-invoice",
+            url: "/inventory/manage-invoice",
         },
         {
             id: "manageProduct",
             icon: <FaFileInvoice />,
             label: "Manage Product",
-            url: "/manage-product",
+            url: "/inventory/manage-product",
         },
     ];
 

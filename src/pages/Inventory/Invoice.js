@@ -116,7 +116,7 @@ const Invoice = () => {
             .then((res) => {
                 showSuccess("Invoice Created successfully")
                 setTimeout(() => {
-                    navigate("/manage-invoice")
+                    navigate("/inventory/manage-invoice")
                 }, 1000)
             })
             .catch((error) => {
